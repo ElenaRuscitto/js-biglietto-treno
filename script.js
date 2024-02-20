@@ -11,11 +11,11 @@ console.log (kmPercorrere, anni, prezzoBiglietto);
 if (anni <= 17) {
   let scontoMin = prezzoBiglietto * 20 / 100
   prezzoBiglietto = prezzoBiglietto - scontoMin
-}
-
-if (anni >= 65) {
+} else if (anni >= 66) {
   let scontoMin = prezzoBiglietto * 40 / 100
   prezzoBiglietto = prezzoBiglietto - scontoMin
 }
 
 console.log (prezzoBiglietto.toFixed(2))
+
+document.getElementById ('price').innerHTML += prezzoBiglietto.toFixed(2)
